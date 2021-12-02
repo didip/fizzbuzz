@@ -39,19 +39,19 @@ FizzBuzz
 
 ```bash
  python3 main.py | pv > /dev/null             
-^C73MiB 0:00:09 [20.1MiB/s] [                          <=>                                                                                                                   ]
+^C73MiB 0:00:09 [20.1MiB/s]
 ```
 
 ### Go 1.17.2 Naive
 
 ```bash
  go run main.go | pv > /dev/null
-^C.9MiB 0:00:05 [5.74MiB/s] [              <=>                                                                                                                   ]
+^C.9MiB 0:00:05 [5.74MiB/s]
 ```
 
 ## Go 1.17.2 Buffered
 
 ```bash
 go run main.go -mode buffered | pv > /dev/null
-^C52GiB 0:00:11 [ 740MiB/s] [                                <=>                                                                                                                   ]
+^C52GiB 0:00:11 [ 740MiB/s]
 ```
